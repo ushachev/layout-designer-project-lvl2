@@ -1,0 +1,57 @@
+@import 'fonts';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: var(--color-light-darken);
+  font: 16px/1.5 var(--font-main);
+
+  background-color: var(--color-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin: 0;
+
+  color: var(--color-white);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 60px;
+
+  @include media(mobile) {
+    font-size: 30px;
+  }
+
+}
+
+h2 {
+  font-size: 38px;
+
+  @include media(mobile) {
+    font-size: 18px;
+  }
+}

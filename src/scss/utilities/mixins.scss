@@ -1,0 +1,7 @@
+@mixin media($breakpoint: "mobile") {
+  $max-width-value: map-get($breakpoints, $breakpoint);
+
+  @media screen and (max-width: #{$max-width-value}) {
+    @content;
+  }
+}
