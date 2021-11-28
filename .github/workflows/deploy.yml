@@ -1,0 +1,37 @@
+name: LayoutDesigner pr.#2 CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install
+      run: |
+        make install
+      env:
+        CI: true
+
+    - name: Run linter
+      run: |
+        make lint
+        make build
+
+    - name: Deploy 🚀
+      run: |
+        npx surge ./src/ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }} 
