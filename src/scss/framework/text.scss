@@ -1,0 +1,13 @@
+@each $color-name, $color in $colors {
+  .text-#{$color-name} {
+    color: $color;
+  }
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}

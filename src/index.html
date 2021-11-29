@@ -6,9 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music box. vitush</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 </body>
-    <h1 class="title">Заголовок!</h1>
+    <header class="header w-100">
+        <div class="container d-sm-flex">
+            <a class="d-flex align-items-center text-decoration-none" href="/">
+                <img src="images/logo.svg" alt="Логотип" width="24" height="24">
+                <span class="logo-title text-white text-uppercase">Music Box</span>
+            </a>
+            <nav class="header-nav align-self-center">
+                <ul class="d-sm-flex list-unstyled">
+                    <li class="header-nav-item active">
+                        <a class="link-text text-uppercase" href="/">Главная</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="link-text text-uppercase" href="#">Каталог</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="link-text text-uppercase" href="/artist.html">Исполнители</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="link-text text-uppercase" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="header-search w-100 bg-dark text-uppercase" id="search" type="text" name="search" placeholder="Поиск...">
+        </div>
+    </header>
 </html>

@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  font-size: 11px;
+}
+
+.header-nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  @include media-up(sm) {
+    margin: 0 90px 0 auto;
+  }
+}
+
+.header-nav-item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &.active {
+    a {
+      color: var(--color-white);
+    }
+  }
+}
+
+.header-search {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 50px;
+
+  color: #757575;
+
+  font-size: 13.3px;
+  line-height: 1;
+
+  outline: none;
+
+  @include media-up(sm) {
+    width: 248px;
+  }
+}

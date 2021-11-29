@@ -1,7 +1,9 @@
-@mixin media($breakpoint: "mobile") {
-  $max-width-value: map-get($breakpoints, $breakpoint);
+@use "sass:map";
 
-  @media screen and (max-width: #{$max-width-value}) {
+@mixin media-up($breakpoint: "sm") {
+  $min-width-value: map.get($breakpoints, $breakpoint);
+
+  @media screen and (min-width: #{$min-width-value}) {
     @content;
   }
 }

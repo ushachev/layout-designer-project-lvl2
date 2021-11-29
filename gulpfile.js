@@ -10,9 +10,9 @@ const {
 const sass = gulpSass(dartSass);
 const browserSync = bs.create();
 
-const clean = () => del(['src/css/main.css']);
+const clean = () => del(['src/css/app.css']);
 
-const buildStyles = () => src('src/scss/main.scss')
+const buildStyles = () => src('src/scss/app.scss')
   .pipe(sass.sync().on('error', sass.logError))
   .pipe(dest('src/css'))
   .pipe(browserSync.stream());
@@ -26,7 +26,7 @@ const runServer = () => {
   });
 
   watch('src/scss/**/*.scss', buildStyles);
-  watch('src/*.html', browserSync.reload);
+  watch('src/*.html').on('change', browserSync.reload);
 };
 
 export const develop = series(build, runServer);

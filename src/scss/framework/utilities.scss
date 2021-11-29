@@ -1,0 +1,17 @@
+.d-flex {
+  display: flex;
+}
+
+.d-sm-flex {
+  @include media-up(sm) {
+    display: flex;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}

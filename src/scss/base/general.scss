@@ -1,4 +1,4 @@
-@import 'fonts';
+@import "fonts";
 
 *,
 *::before,
@@ -40,18 +40,17 @@ h2 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 30px;
 
-  @include media(mobile) {
-    font-size: 30px;
+  @include media-up(sm) {
+    font-size: 60px;
   }
-
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 18px;
 
-  @include media(mobile) {
-    font-size: 18px;
+  @include media-up(sm) {
+    font-size: 38px;
   }
 }

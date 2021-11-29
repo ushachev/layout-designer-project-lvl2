@@ -1,26 +1,26 @@
 $colors: (
-  'black': #08020d,
-  'white': #fff,
-  'dark': #3c3b3d,
-  'light': #e0e0e0,
-  'light-darken': #cacaca,
-  'main': #34c176,
-  'accent': #5328a1,
-  'secondary': #95390c,
-  'info': #f89202,
+  "black": #08020d,
+  "white": #fff,
+  "dark": #3c3b3d,
+  "light": #e0e0e0,
+  "light-darken": #cacaca,
+  "main": #34c176,
+  "accent": #5328a1,
+  "secondary": #95390c,
+  "info": #f89202,
 );
-
 $breakpoints: (
-  mobile: 480px,
+  sm: 576px,
 );
 
 :root {
-  --font-main: 'Roboto', sans-serif;
+  --font-main: "Roboto", sans-serif;
   --transition-duration: 0.2s;
 }
 
 @each $color-name, $color in $colors {
   :root {
+    /* stylelint-disable-next-line custom-property-pattern */
     --color-#{$color-name}: #{$color};
   }
 }

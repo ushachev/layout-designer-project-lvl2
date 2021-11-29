@@ -1,0 +1,48 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+@each $color-name, $color in $colors {
+  .bg-#{$color-name} {
+    background-color: $color;
+  }
+}
+
+.link-text {
+  text-decoration-color: transparent;
+
+  transition: text-decoration-color var(--transition-duration);
+
+  &:hover {
+    text-decoration-color: inherit;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
