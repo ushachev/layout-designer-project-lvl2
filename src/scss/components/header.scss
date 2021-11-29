@@ -11,7 +11,7 @@
   margin-bottom: 15px;
 
   @include media-up(sm) {
-    margin: 0 90px 0 auto;
+    margin: 0 auto 0 90px;
   }
 }
 
@@ -32,9 +32,6 @@
   border: 0;
   border-radius: 50px;
 
-  color: #757575;
-
-  font-size: 13.3px;
   line-height: 1;
 
   outline: none;

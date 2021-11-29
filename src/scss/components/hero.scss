@@ -1,0 +1,14 @@
+.hero {
+  @extend %bg-image;
+
+  padding-top: 250px;
+  padding-bottom: 200px;
+
+  @include media-up(sm) {
+    padding-top: 200px;
+  }
+}
+
+.hero-home {
+  background-image: url("../images/banner.png");
+}

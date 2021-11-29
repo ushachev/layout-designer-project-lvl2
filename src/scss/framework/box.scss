@@ -1,3 +1,40 @@
+$top-margins: (24);
+$top-sm-margins: (0);
+$left-sm-margins: (24);
+
+@each $value in $top-margins {
+  .mt-#{$value} {
+    margin-top: #{$value}px;
+  }
+}
+
+@each $value in $top-sm-margins {
+  .mt-sm-#{$value} {
+    @include media-up(sm) {
+      margin-top: #{$value}px;
+    }
+  }
+}
+
+@each $value in $left-sm-margins {
+  .ms-sm-#{$value} {
+    @include media-up(sm) {
+      margin-left: #{$value}px;
+    }
+  }
+}
+
+.mx-sm-auto {
+  @include media-up(sm) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .w-100 {
   width: 100%;
+}
+
+.max-w-570 {
+  max-width: 570px;
 }

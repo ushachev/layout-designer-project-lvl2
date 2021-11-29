@@ -1,0 +1,25 @@
+.form-input {
+  flex-grow: 1;
+  min-width: 270px;
+  min-height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px solid var(--color-light-darken);
+  border-radius: 3px;
+
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-input::placeholder {
+  color: inherit;
+}
+
+.form-input:focus {
+  border-color: var(--color-main);
+}
