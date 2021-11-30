@@ -1,0 +1,45 @@
+.pricing-item {
+  @extend %bg-image;
+
+  margin-bottom: 40px;
+  padding: 20px 1.5rem 64px;
+  border-radius: 1rem;
+
+  color: var(--color-white);
+  text-align: center;
+
+  @include media-up(sm) {
+    padding-top: 24px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.pricing-item-free {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.pricing-item-standart {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.pricing-item-premium {
+  background-image: url("../images/subscribe_3.png");
+}
+
+.pricing-value {
+  margin-top: 200px;
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  line-height: 1em;
+}
+
+.pricing-currency {
+  margin-left: 16px;
+
+  font-size: 32px;
+  text-transform: uppercase;
+}

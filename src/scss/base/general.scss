@@ -31,7 +31,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 
   color: var(--color-white);
@@ -52,5 +53,13 @@ h2 {
 
   @include media-up(sm) {
     font-size: 38px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+
+  @include media-up(sm) {
+    font-size: 24px;
   }
 }

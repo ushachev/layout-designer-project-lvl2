@@ -1,6 +1,7 @@
-$top-margins: (24);
+$top-margins: (24, 50, 64);
 $top-sm-margins: (0);
 $left-sm-margins: (24);
+$top-paddings: (100);
 
 @each $value in $top-margins {
   .mt-#{$value} {
@@ -21,6 +22,12 @@ $left-sm-margins: (24);
     @include media-up(sm) {
       margin-left: #{$value}px;
     }
+  }
+}
+
+@each $value in $top-paddings {
+  .pt-#{$value} {
+    padding-top: #{$value}px;
   }
 }
 

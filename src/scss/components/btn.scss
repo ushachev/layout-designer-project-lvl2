@@ -2,12 +2,16 @@
   position: relative;
   z-index: 0;
 
+  display: inline-block;
+
   padding: 20px 30px;
   border: 1px solid transparent;
   border-radius: 5px;
   overflow: hidden;
 
   color: inherit;
+  text-align: center;
+  text-decoration: none;
 
   background: none;
 }
@@ -26,9 +30,19 @@
 }
 
 .btn:hover::before {
-  filter: brightness(0.92);
+  filter: brightness(0.8);
 }
 
 .btn-primary::before {
   background-color: var(--color-main);
+}
+
+.btn-outline-white {
+  border-color: var(--color-white);
+}
+
+.btn-outline-white:hover {
+  color: var(--color-black);
+
+  background-color: var(--color-white);
 }

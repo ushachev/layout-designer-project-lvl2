@@ -4,10 +4,10 @@
 @import "base/general";
 
 // ===========================
+@import "framework/common";
 @import "framework/box";
 @import "framework/utilities";
 @import "framework/text";
-@import "framework/common";
 
 // ===========================
 @import "components/header";
@@ -15,3 +15,4 @@
 @import "components/hero";
 @import "components/form";
 @import "components/btn";
+@import "components/pricing";
