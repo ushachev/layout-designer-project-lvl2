@@ -1,6 +1,7 @@
-$top-margins: (16, 30, 24, 48, 64);
+$top-margins: (16, 24, 30, 48, 64);
 $top-sm-margins: (0);
-$bottom-margins: (0);
+$right-margins: (24);
+$bottom-margins: (0, 24);
 $left-margins: (16, 24);
 $left-sm-margins: (16, 24);
 $top-paddings: (32, 48, 100);
@@ -17,6 +18,12 @@ $bottom-paddings: (32, 48, 100);
     @include media-up(sm) {
       margin-top: #{$value}px;
     }
+  }
+}
+
+@each $value in $right-margins {
+  .me-#{$value} {
+    margin-right: #{$value}px;
   }
 }
 

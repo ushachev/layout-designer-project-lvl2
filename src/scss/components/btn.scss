@@ -2,7 +2,9 @@
   position: relative;
   z-index: 0;
 
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   padding: 20px 30px;
   border: 1px solid transparent;
@@ -10,9 +12,8 @@
   overflow: hidden;
 
   color: inherit;
-  text-align: center;
+  font-family: inherit;
   text-decoration: none;
-  vertical-align: middle;
 
   background: none;
 }
@@ -45,12 +46,24 @@
   border-radius: 32px;
 }
 
+.btn-wide {
+  width: 200px;
+}
+
+.btn-start {
+  justify-content: start;
+}
+
 .btn-primary::before {
   background-color: var(--color-main);
 }
 
 .btn-secondary::before {
   background-color: var(--color-secondary);
+}
+
+.btn-accent::before {
+  background-color: var(--color-accent);
 }
 
 .btn-outline-white {
