@@ -1,0 +1,28 @@
+.news-item {
+  @include media-up(sm) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.news-body {
+  margin-top: 48px;
+
+  @include media-up(sm) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .news-item-reverted & {
+    @include media-up(sm) {
+      order: -1;
+      margin-right: 50px;
+      margin-left: 0;
+    }
+  }
+}
+
+.news-title {
+  font-weight: normal;
+  text-transform: none;
+}

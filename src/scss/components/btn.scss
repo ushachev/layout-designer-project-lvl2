@@ -12,6 +12,7 @@
   color: inherit;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
 
   background: none;
 }
@@ -33,6 +34,11 @@
   filter: brightness(0.8);
 }
 
+.btn-small {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .btn-primary::before {
   background-color: var(--color-main);
 }
@@ -45,4 +51,14 @@
   color: var(--color-black);
 
   background-color: var(--color-white);
+}
+
+.btn-outline-darken {
+  border-color: var(--color-darken);
+}
+
+.btn-outline-darken:hover {
+  color: var(--color-black);
+
+  background-color: var(--color-darken);
 }
