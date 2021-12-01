@@ -39,8 +39,18 @@
   padding-bottom: 16px;
 }
 
+.btn-round {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 32px;
+}
+
 .btn-primary::before {
   background-color: var(--color-main);
+}
+
+.btn-secondary::before {
+  background-color: var(--color-secondary);
 }
 
 .btn-outline-white {

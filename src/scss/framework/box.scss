@@ -4,6 +4,7 @@ $bottom-margins: (0);
 $left-margins: (16);
 $left-sm-margins: (24);
 $top-paddings: (100);
+$bottom-paddings: (100);
 
 @each $value in $top-margins {
   .mt-#{$value} {
@@ -45,6 +46,17 @@ $top-paddings: (100);
   }
 }
 
+@each $value in $bottom-paddings {
+  .pb-#{$value} {
+    padding-bottom: #{$value}px;
+  }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .mx-sm-auto {
   @include media-up(sm) {
     margin-right: auto;
@@ -58,4 +70,10 @@ $top-paddings: (100);
 
 .max-w-570 {
   max-width: 570px;
+}
+
+.max-w-sm-50p {
+  @include media-up(sm) {
+    max-width: 50%;
+  }
 }
