@@ -53,6 +53,10 @@ h2 {
 
   @include media-up(sm) {
     font-size: 38px;
+
+    footer & {
+      font-size: 18px;
+    }
   }
 }
 

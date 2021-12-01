@@ -1,10 +1,10 @@
-$top-margins: (24, 48, 64);
+$top-margins: (16, 30, 24, 48, 64);
 $top-sm-margins: (0);
 $bottom-margins: (0);
-$left-margins: (16);
-$left-sm-margins: (24);
-$top-paddings: (100);
-$bottom-paddings: (100);
+$left-margins: (16, 24);
+$left-sm-margins: (16, 24);
+$top-paddings: (32, 48, 100);
+$bottom-paddings: (32, 48, 100);
 
 @each $value in $top-margins {
   .mt-#{$value} {
