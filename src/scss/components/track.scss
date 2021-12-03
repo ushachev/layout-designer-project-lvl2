@@ -10,21 +10,3 @@
   margin-right: auto;
   margin-left: 16px;
 }
-
-.track-list {
-  flex-wrap: wrap;
-
-  & li {
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-
-    @include media-up(sm) {
-      padding-right: 50px;
-
-      &:nth-last-child(2) {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
