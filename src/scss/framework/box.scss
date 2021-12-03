@@ -75,6 +75,16 @@ $bottom-paddings: (32, 48, 100);
   width: 100%;
 }
 
+.w-50 {
+  width: 50%;
+}
+
+.w-sm-25 {
+  @include media-up(sm) {
+    width: 25%;
+  }
+}
+
 .max-w-570 {
   max-width: 570px;
 }
