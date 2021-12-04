@@ -673,6 +673,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 576px) {
+  .news-image {
+    flex-shrink: 0;
+  }
+}
+
 .news-body {
   margin-top: 48px;
 }

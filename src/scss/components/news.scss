@@ -5,6 +5,12 @@
   }
 }
 
+.news-image {
+  @include media-up(sm) {
+    flex-shrink: 0;
+  }
+}
+
 .news-body {
   margin-top: 48px;
 
