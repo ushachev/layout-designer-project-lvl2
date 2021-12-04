@@ -2,7 +2,7 @@
   @extend %bg-image;
 
   margin-bottom: 40px;
-  padding: 20px 1.5rem 64px;
+  padding: 19px 1.5rem 64px;
   border-radius: 1rem;
 
   color: var(--color-white);
@@ -38,9 +38,8 @@
 }
 
 .pricing-currency {
-  margin-left: 16px;
-
   font-size: 32px;
   line-height: 1em;
   text-transform: uppercase;
+  vertical-align: super;
 }
