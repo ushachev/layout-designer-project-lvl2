@@ -247,6 +247,10 @@ h3 {
   margin-top: 30px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-48 {
   margin-top: 48px;
 }
@@ -618,11 +622,13 @@ h3 {
 }
 
 .pricing-item {
-  margin-bottom: 40px;
   padding: 19px 1.5rem 64px;
   border-radius: 1rem;
   color: var(--color-white);
   text-align: center;
+}
+.pricing-item:not(:last-child) {
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 576px) {
   .pricing-item {
@@ -630,6 +636,7 @@ h3 {
   }
   .pricing-item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
