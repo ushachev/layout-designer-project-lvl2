@@ -655,6 +655,7 @@ h3 {
 .pricing-currency {
   margin-left: 16px;
   font-size: 32px;
+  line-height: 1em;
   text-transform: uppercase;
 }
 
