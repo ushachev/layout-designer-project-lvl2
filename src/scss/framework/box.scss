@@ -2,6 +2,7 @@ $top-margins: (14, 16, 24, 40, 48, 64, 100);
 $top-sm-margins: (0, 30, 48);
 $right-margins: (16, 24);
 $bottom-margins: (0, 24);
+$bottom-sm-margins: (0);
 $left-margins: (16, 24);
 $left-sm-margins: (24);
 $top-paddings: (41, 64, 100);
@@ -30,6 +31,14 @@ $bottom-paddings: (48, 72);
 @each $value in $bottom-margins {
   .mb-#{$value} {
     margin-bottom: #{$value}px;
+  }
+}
+
+@each $value in $bottom-sm-margins {
+  .mb-sm-#{$value} {
+    @include media-up(sm) {
+      margin-bottom: #{$value}px;
+    }
   }
 }
 
