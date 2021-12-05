@@ -8,6 +8,10 @@
   }
 }
 
+.d-inline-flex {
+  display: inline-flex;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -30,6 +34,12 @@
 
 .align-self-center {
   align-self: center;
+}
+
+.align-self-sm-center {
+  @include media-up(sm) {
+    align-self: center;
+  }
 }
 
 .align-text-top {
