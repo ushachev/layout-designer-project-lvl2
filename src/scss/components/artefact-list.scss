@@ -1,11 +1,12 @@
 .artefact-list {
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: -25px;
+  margin-top: -25px;
+}
 
-  & li {
-    margin-bottom: 25px;
-    padding-right: 50px;
-  }
+.artefact-list-item {
+  margin-top: 25px;
+  padding-right: 50px;
 }
 
 .artefact-list-track {

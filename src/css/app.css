@@ -84,7 +84,6 @@ body,
 html {
   box-sizing: border-box;
   margin: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -367,6 +366,12 @@ h3 {
 }
 
 @media screen and (min-width: 576px) {
+  .w-sm-50 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 576px) {
   .w-sm-25 {
     width: 25%;
   }
@@ -432,6 +437,10 @@ h3 {
 
 .fill-current {
   fill: currentColor;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .text-black {
@@ -762,17 +771,19 @@ h3 {
   font-size: 12.8px;
 }
 
-.track-info {
+.track-name {
   margin-right: auto;
   margin-left: 16px;
 }
 
 .artefact-list {
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: -25px;
+  margin-top: -25px;
 }
-.artefact-list li {
-  margin-bottom: 25px;
+
+.artefact-list-item {
+  margin-top: 25px;
   padding-right: 50px;
 }
 

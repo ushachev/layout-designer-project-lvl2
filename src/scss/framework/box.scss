@@ -93,6 +93,12 @@ $bottom-paddings: (48, 72);
   width: 50%;
 }
 
+.w-sm-50 {
+  @include media-up(sm) {
+    width: 50%;
+  }
+}
+
 .w-sm-25 {
   @include media-up(sm) {
     width: 25%;
