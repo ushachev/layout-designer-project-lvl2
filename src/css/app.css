@@ -275,6 +275,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 576px) {
+  .mt-sm-48 {
+    margin-top: 48px;
+  }
+}
+
 .me-16 {
   margin-right: 16px;
 }
