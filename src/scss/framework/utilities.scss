@@ -18,10 +18,6 @@
   }
 }
 
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
 .order-sm-first {
   @include media-up(sm) {
     order: -1;

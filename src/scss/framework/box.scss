@@ -1,11 +1,11 @@
-$top-margins: (16, 24, 30, 40, 48, 64, 100);
+$top-margins: (16, 24, 40, 48, 64, 100);
 $top-sm-margins: (0, 30);
 $right-margins: (24);
 $bottom-margins: (0, 24);
 $left-margins: (16, 24);
 $left-sm-margins: (16, 24);
-$top-paddings: (32, 48, 100);
-$bottom-paddings: (32, 48);
+$top-paddings: (40, 64, 100);
+$bottom-paddings: (48, 70);
 
 @each $value in $top-margins {
   .mt-#{$value} {
@@ -69,6 +69,11 @@ $bottom-paddings: (32, 48);
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .w-100 {
