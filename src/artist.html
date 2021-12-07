@@ -10,24 +10,24 @@
 </head>
 <body>
     <header class="header w-100">
-        <div class="container d-flex flex-column flex-sm-row">
+        <div class="container d-sm-flex">
             <div>
                 <img src="images/logo.svg" alt="Логотип" width="24" height="24">
-                <span class="ms-14 text-white text-uppercase">Music Box</span>
+                <a class="ms-16 align-text-top text-white text-uppercase text-decoration-none" href="/">Music Box</a>
             </div>
             <nav class="header-nav align-self-sm-center">
-                <ul class="list-unstyled d-inline-flex flex-column flex-sm-row">
-                    <li class="header-nav-item">
-                        <a class="link-text text-uppercase" href="/">Главная</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a class="link-text text-uppercase" href="#">Каталог</a>
-                    </li>
+                <ul class="list-unstyled d-flex flex-column flex-sm-row align-items-start">
                     <li class="header-nav-item active">
-                        <a class="link-text text-uppercase" href="/artist.html">Исполнители</a>
+                        <a class="link-text align-text-top text-uppercase" href="/">Главная</a>
                     </li>
                     <li class="header-nav-item">
-                        <a class="link-text text-uppercase" href="#">Контакты</a>
+                        <a class="link-text align-text-top text-uppercase" href="#">Каталог</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="link-text align-text-top text-uppercase" href="/artist.html">Исполнители</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="link-text align-text-top text-uppercase" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -55,8 +55,8 @@
         <section id="page-popular-track" class="container pt-100">
             <h2>Популярные треки</h2>
             <div class="overflow-hidden mt-48">
-                <div class="artefact-list artefact-list-track">
-                    <div class="artefact-list-item w-100 w-sm-50">
+                <ul class="artefact-list artefact-list-track list-unstyled">
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Wild Seed.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -65,8 +65,8 @@
                             </div>
                             <div>4:07</div>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-100 w-sm-50">
+                    </li>
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Letter from Egypt.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -75,8 +75,8 @@
                             </div>
                             <div>3:48</div>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-100 w-sm-50">
+                    </li>
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Brother.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -85,8 +85,8 @@
                             </div>
                             <div>5:05</div>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-100 w-sm-50">
+                    </li>
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Wild Seed.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -95,8 +95,8 @@
                             </div>
                             <div>4:24</div>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-100 w-sm-50">
+                    </li>
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Letter from Egypt.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -105,8 +105,8 @@
                             </div>
                             <div>3:45</div>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-100 w-sm-50">
+                    </li>
+                    <li class="artefact-list-item w-100 w-sm-50">
                         <div class="track">
                             <img src="images/Out of My Hands.png" alt="Spanish Step" width="55" height="55">
                             <div class="track-name">
@@ -115,52 +115,52 @@
                             </div>
                             <div>3:52</div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="page-discography" class="container pt-100">
             <h2>Дискография</h2>
             <div class="overflow-hidden mt-48">
-                <div class="artefact-list">
-                    <div class="artefact-list-item w-50 w-sm-25">
+                <ul class="artefact-list list-unstyled">
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Brother.png" alt="Brother" width="250" height="250">
                         <h3 class="artefact-title">Brother</h3>
                         <time>2014</time>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Out of My Hands.png" alt="Out of My Hands" width="250" height="250">
                         <h3 class="artefact-title">Out of My Hands</h3>
                         <time>2012</time>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Letter from Egypt.png" alt="Letter from Egypt" width="250" height="250">
                         <h3 class="artefact-title">Letter from Egypt</h3>
                         <time>2008</time>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Vogts Villa.png" alt="Vogts Vills" width="250" height="250">
                         <h3 class="artefact-title">Vogts Vills</h3>
                         <time>1996</time>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Wild Seed.png" alt="Wild Seed" width="250" height="250">
                         <h3 class="artefact-title">Wild Seed</h3>
                         <time>1995</time>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <img src="images/Poetenes Evangelium.png" alt="Poetenes Evangelium" width="250" height="250">
                         <h3 class="artefact-title">Poetenes Evangelium</h3>
                         <time>1993</time>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="page-similar" class="container pt-100">
             <h2>Похожие исполнители</h2>
             <div class="overflow-hidden mt-48">
-                <div class="artefact-list">
-                    <div class="artefact-list-item w-50 w-sm-25">
+                <ul class="artefact-list list-unstyled">
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/A-ha.png" alt="A-Ha" width="250" height="250">
                             <h3 class="artefact-title">A-Ha</h3>
@@ -169,8 +169,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Tears for Fears.png" alt="Tears for Fears" width="250" height="250">
                             <h3 class="artefact-title">Tears for Fears</h3>
@@ -179,8 +179,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Duran Duran.png" alt="Duran Duran" width="250" height="250">
                             <h3 class="artefact-title">Duran Duran</h3>
@@ -189,8 +189,8 @@
                                 <span>поклонник</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Jack Savoretti.png" alt="Jack Savoretti" width="250" height="250">
                             <h3 class="artefact-title">Jack Savoretti</h3>
@@ -199,8 +199,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Keane.png" alt="Keane" width="250" height="250">
                             <h3 class="artefact-title">Keane</h3>
@@ -209,8 +209,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Frank Sinatra.png" alt="Frank Sinatra" width="250" height="250">
                             <h3 class="artefact-title">Frank Sinatra</h3>
@@ -219,8 +219,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Paul Young.png" alt="Paul Young" width="250" height="250">
                             <h3 class="artefact-title">Paul Young</h3>
@@ -229,8 +229,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                    <div class="artefact-list-item w-50 w-sm-25">
+                    </li>
+                    <li class="artefact-list-item w-50 w-sm-25">
                         <div class="artefact-rounded text-center">
                             <img src="images/Chris Rea.png" alt="Chris Rea" width="250" height="250">
                             <h3 class="artefact-title">Chris Rea</h3>
@@ -239,8 +239,8 @@
                                 <span>поклонников</span>                                
                             </p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -250,7 +250,7 @@
                 <div class="footer-nav">
                     <div class="footer-nav-block">
                        <h2>О нас</h2>
-                       <ul class="mt-14 list-unstyled text-light">
+                       <ul class="mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-text">История компании</a>
                             </li>
@@ -267,7 +267,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Поддержка</h2>
-                        <ul class="mt-14 list-unstyled text-light">
+                        <ul class="mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-text">База знаний</a>
                             </li>
@@ -284,7 +284,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Контакты</h2>
-                        <div class="mt-14 text-light">
+                        <div class="mt-16 text-light">
                             <a class="link-text" href="mailto:hello@music.box">hello@music.box</a>
                             <p class="my-0">Russia, Moscow. Music Box studio</p>
                             <a class="link-text" href="tel:+74999999999">+ 7 499 999 99 99</a>
@@ -292,7 +292,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Подписывайтесь</h2>
-                        <ul class="d-flex mt-14 list-unstyled text-light">
+                        <ul class="d-flex mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-icon">
                                     <img src="images/Google+.png" alt="Google+" width="26" height="17">
@@ -318,15 +318,25 @@
                 </div>
             </div>
         </nav>
-        <nav class="pt-41 pb-48">
+        <nav class="pt-40 pb-48">
             <div class="container">
-                <div class="d-flex flex-column flex-sm-row text-light">
-                    <a class="link-text me-16" href="#">Магазин</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Обслуживание</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Блог</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Поддержка</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Контакты</a>
-                </div>
+                <ul class="d-sm-flex list-unstyled text-light">
+                    <li class="me-16">
+                        <a class="link-text" href="#">Магазин</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Обслуживание</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Блог</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Поддержка</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Контакты</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </footer>

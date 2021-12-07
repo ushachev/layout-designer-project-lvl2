@@ -15,7 +15,7 @@
                 <img src="images/logo.svg" alt="Логотип" width="24" height="24">
                 <a class="ms-16 align-text-top text-white text-uppercase text-decoration-none" href="/">Music Box</a>
             </div>
-            <nav class="header-nav align-self-center">
+            <nav class="header-nav align-self-sm-center">
                 <ul class="list-unstyled d-flex flex-column flex-sm-row align-items-start">
                     <li class="header-nav-item active">
                         <a class="link-text align-text-top text-uppercase" href="/">Главная</a>
@@ -54,8 +54,8 @@
         </section>
         <section id="page-pricing" class="container pt-100 text-center text-white">
             <h2>Формы подписки</h2>
-            <div class="d-sm-flex list-unstyled mt-48">
-                <div class="pricing-item pricing-item-free">
+            <ul class="d-sm-flex list-unstyled mt-48">
+                <li class="pricing-item pricing-item-free">
                     <h3 class="fw-normal">Бесплатная</h3>
                     <p class="pricing-value">
                         <span>0</span>
@@ -63,8 +63,8 @@
                     </p>
                     <a class="btn btn-outline-white w-100 text-uppercase" href="#">оформить</a>
                     <p class="mt-64 text-small">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p> 
-                </div>
-                <div class="pricing-item pricing-item-standart">
+                </li>
+                <li class="pricing-item pricing-item-standart">
                     <h3 class="fw-normal">Стандартная</h3>
                     <p class="pricing-value">
                         <span>250</span>
@@ -72,8 +72,8 @@
                     </p>
                     <a class="btn btn-outline-white w-100 text-uppercase" href="#">оформить</a>
                     <p class="mt-64 text-small">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p> 
-                </div>
-                <div class="pricing-item pricing-item-premium">
+                </li>
+                <li class="pricing-item pricing-item-premium">
                     <h3 class="fw-normal">Премиум</h3>
                     <p class="pricing-value">
                         <span>500</span>
@@ -81,8 +81,8 @@
                     </p>
                     <a class="btn btn-outline-white w-100 text-uppercase" href="#">оформить</a>
                     <p class="mt-64 text-small">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p> 
-                </div>
-            </div>
+                </li>
+            </ul>
             <p class="mt-40 mb-0">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
         </section>
         <section id="page-news" class="container pt-100">
@@ -132,7 +132,7 @@
                 <div class="footer-nav">
                     <div class="footer-nav-block">
                        <h2>О нас</h2>
-                       <ul class="mt-14 list-unstyled text-light">
+                       <ul class="mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-text">История компании</a>
                             </li>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Поддержка</h2>
-                        <ul class="mt-14 list-unstyled text-light">
+                        <ul class="mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-text">База знаний</a>
                             </li>
@@ -166,7 +166,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Контакты</h2>
-                        <div class="mt-14 text-light">
+                        <div class="mt-16 text-light">
                             <a class="link-text" href="mailto:hello@music.box">hello@music.box</a>
                             <p class="my-0">Russia, Moscow. Music Box studio</p>
                             <a class="link-text" href="tel:+74999999999">+ 7 499 999 99 99</a>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="footer-nav-block">
                         <h2>Подписывайтесь</h2>
-                        <ul class="d-flex mt-14 list-unstyled text-light">
+                        <ul class="d-flex mt-16 list-unstyled text-light">
                             <li>
                                 <a href="#" class="link-icon">
                                     <img src="images/Google+.png" alt="Google+" width="26" height="17">
@@ -200,15 +200,25 @@
                 </div>
             </div>
         </nav>
-        <nav class="pt-41 pb-48">
+        <nav class="pt-40 pb-48">
             <div class="container">
-                <div class="d-flex flex-column flex-sm-row text-light">
-                    <a class="link-text me-16" href="#">Магазин</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Обслуживание</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Блог</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Поддержка</a>
-                    <a class="link-text mt-16 mt-sm-0 me-16" href="#">Контакты</a>
-                </div>
+                <ul class="d-sm-flex list-unstyled text-light">
+                    <li class="me-16">
+                        <a class="link-text" href="#">Магазин</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Обслуживание</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Блог</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Поддержка</a>
+                    </li>
+                    <li class="mt-16 mt-sm-0 me-16">
+                        <a class="link-text" href="#">Контакты</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </footer>

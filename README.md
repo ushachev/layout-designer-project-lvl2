@@ -6,7 +6,6 @@ Educational "Project #2" is being developed as part of "Layout designer" profess
 ##
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/ushachev/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/ushachev/layout-designer-project-lvl2/actions)
 [![LayoutDesigner pr.#2 CI](https://github.com/ushachev/layout-designer-project-lvl2/actions/workflows/deploy.yml/badge.svg)](https://github.com/ushachev/layout-designer-project-lvl2/actions/workflows/deploy.yml)
 
 # Music box

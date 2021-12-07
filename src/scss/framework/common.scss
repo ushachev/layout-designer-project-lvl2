@@ -38,7 +38,6 @@
 }
 
 .link-text {
-  text-decoration-line: none; // remove this line after test passing
   text-decoration-color: transparent;
 
   transition: text-decoration-color var(--transition-duration);
